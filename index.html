@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Insta-Collage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12 l12 xl12">
+        <div id="modal1"class="modal modal-style center-align">
+          <div class="modal-content">
+            <p>Idioma: español(España)<i class="tiny material-icons">expand_more</i></p>
+            <h1>Instagram</h1>
+            <input type="text" placeholder="Nombre de usuario" class="validate" id="first_name" required>
+            <input type="password" placeholder="Contraseña" id="password" class="validate" required minlength="6">
+            <button id="btn-sesion" class="btn-style">Iniciar sesión</button>
+            <p>¿Has olvidado tu información de inicio de sesión? <span>Obtén ayuda.</span></p>
+            <p class="line-div">O</p>
+            <p class="sesion-facebook"><i class="fa fa-facebook-square"></i> Iniciar sesión con Facebook</p>
+            <p>¿No tienes una cuenta? <span>Registrate.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sección donde se depositaran las imagenes -->
+  <div id="correct-margin-bottom" class="row">
+    <div class="col s12 m12 l12 xl12 collage">
+      <div id="container-collage1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="container-collage2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 m12 l12 xl12 collage">
+      <div id="container-collage3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div id="container-collage4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 m12 l 12 xl12">
+      <div class="divisor center-align">
+        <p>PHOTO BOOTH</p>
+      </div>
+    </div>
+  </div>
+  <!-- Sección donde estaran las imagenes -->
+  <section class="center-align">
+    <div class="row">
+      <div class="col s12 m12 l12 xl12" id="container-image" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="drag1" draggable="true" class="responsive-img" ondragstart="drag(event)" src="https://s-media-cache-ak0.pinimg.com/originals/77/9b/62/779b62ccfc236725c2926768b808973b.jpg">
+        <img id="drag2" draggable="true" class="responsive-img" ondragstart="drag(event)" src="http://imageneschistosasparaelface.com/wp-content/uploads/2016/07/fotos-de-perritos-cachorros-salto.jpg">
+        <img id="drag3" draggable="true" class="responsive-img" ondragstart="drag(event)" src="http://imageneschistosasparaelface.com/wp-content/uploads/2016/07/fotos-de-perritos-cachorros-tierno.jpg">
+        <img id="drag4" draggable="true" class="responsive-img" ondragstart="drag(event)" src="https://www.okchicas.com/wp-content/uploads/2015/02/perritos-m%C3%A1s-adorables-2-8.jpg">
+        <img id="drag5" draggable="true" class="responsive-img" ondragstart="drag(event)" src="https://s-media-cache-ak0.pinimg.com/originals/73/6f/10/736f10dc1bc23809c7b15a10f8e9375f.jpg">
+        <img id="drag6" draggable="true" class="responsive-img" ondragstart="drag(event)" src="https://i.pinimg.com/736x/70/a0/fb/70a0fb6930405ab6621607f2f48a8353--puppy-love-doggies.jpg">
+        <img id="drag7" draggable="true" class="responsive-img" ondragstart="drag(event)" src="http://el124.com/wp-content/uploads/2013/12/datos-curiosos-de-perros-lentes.jpg">
+        <img id="drag8" draggable="true" class="responsive-img" ondragstart="drag(event)" src="https://i.pinimg.com/736x/f5/58/38/f55838fda7d0c5b9fd17bef730f78cfd--a-start-yorkie-puppies.jpg">
+        <img id="drag9" draggable="true" class="responsive-img" ondragstart="drag(event)" src="https://s-media-cache-ak0.pinimg.com/originals/ec/06/27/ec06271fbed1815f6fc351da937ed855.jpg">
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+| <script type="text/javascript" src="https://use.fontawesome.com/7873633050.js"></script>
+  <script src="assets/js/main.js"></script> 
+</body>
+</html>

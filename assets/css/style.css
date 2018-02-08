@@ -10,14 +10,14 @@ h1{
   margin-bottom: 0;
 }
 img{
-  width: 13em; 
+  width: 12.5em; 
 }
 .collage{
   display: flex;
 }
 #container-collage1, #container-collage2{
-  height: 15em;
-  width: 15em;
+  height: 14em;
+  width: 14em;
   border: 0.5em solid #BDBDBD;
 }
 #container-collage1 img, #container-collage2 img{
@@ -25,8 +25,8 @@ img{
   height: 100%;
 }
 #container-collage3, #container-collage4{
-  width: 15em;
-  height: 15em;
+  width: 14em;
+  height: 14em;
   border-radius: 50%;
   border: 0.5em solid #BDBDBD;
 }
